@@ -18,8 +18,10 @@ struct DailyWeatherView: View {
         VStack(spacing: 10) {
             HStack {
                 VStack(spacing: -3) {
+                    LocationNameView(city: cityVM.city)
+                    Spacer(minLength: 20)
                     Text("Today")
-                        .font(.largeTitle)
+                        .font(.title)
                         .bold()
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     Text(date)

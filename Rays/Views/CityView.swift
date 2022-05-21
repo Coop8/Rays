@@ -13,7 +13,6 @@ struct CityView: View {
     
     var body: some View {
         VStack {
-            LocationNameView(city: cityVM.city)
             DailyWeatherView(cityVM: cityVM, date: cityVM.date)
                 .padding()
             ConditionsView(cityVM: cityVM)

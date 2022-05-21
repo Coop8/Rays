@@ -17,7 +17,7 @@ struct LocationNameView: View {
                     .font(.largeTitle)
                     .bold()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-            }.padding()
+            }
         }
     }
 }

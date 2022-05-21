@@ -85,6 +85,10 @@ final class CityViewVM: ObservableObject {
         return String(format: "%0.0f", temp)
     }
     
+    func getPrecipFor(precip: Double) -> String {
+        return String(format: "%0.0f%%", precip * 100.0)
+    }
+    
     private func getLocation() {
         CLGeocoder().geocodeAddressString(city) { (placemarks, error) in
             if let places = placemarks, let place = places.first {

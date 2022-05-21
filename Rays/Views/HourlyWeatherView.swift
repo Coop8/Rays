@@ -25,7 +25,8 @@ struct HourlyWeatherView: View {
                         let icon = cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
                         let hour = cityVM.getTimeFor(timestamp: weather.dt)
                         let temp = cityVM.getTempFor(temp: weather.temp)
-                        getHourlyWeather(hour: hour, image: icon, temp: temp)
+                        let precip = cityVM.getPrecipFor(precip: weather.pop)
+                        getHourlyWeather(hour: hour, image: icon, temp: temp, precip: precip)
                     }
                 }.padding()
             }
@@ -34,12 +35,13 @@ struct HourlyWeatherView: View {
             .padding()
     }
     
-    private func getHourlyWeather(hour: String, image: Image, temp: String) -> some View {
+    private func getHourlyWeather(hour: String, image: Image, temp: String, precip: String) -> some View {
         VStack(spacing: 20) {
             Text(hour)
             image
                 .foregroundColor(darkMode == .dark ? Color.white : Color.black)
             Text(temp)
+            Text(precip)
         }.padding()
             .background(RoundedRectangle(cornerRadius: 20).fill(darkMode == .dark ? Color(.systemGray2) : Color.white))
             //.shadow(color: Color.white.opacity(0.2), radius: 2, x: -2, y: -2)

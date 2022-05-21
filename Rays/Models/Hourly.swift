@@ -1,13 +1,13 @@
 //
-//  Weather.swift
+//  Hourly.swift
 //  Rays
 //
-//  Created by Cooper R on 5/17/22.
+//  Created by Cooper R on 5/21/22.
 //
 
 import Foundation
 
-class Weather: Codable, Identifiable {
+class Hourly: Codable, Identifiable {
     var dt: Int
     var temp: Double
     // var feelLike: Double
@@ -18,6 +18,7 @@ class Weather: Codable, Identifiable {
     var wind_speed: Double
     var wind_deg: Int
     var weather: [Detail]
+    var pop: Double
     
     enum CodingKey: String {
         case dt
@@ -30,6 +31,7 @@ class Weather: Codable, Identifiable {
         case wind_speed
         case wind_deg
         case weather
+        case pop
     }
     
     init() {
@@ -43,10 +45,11 @@ class Weather: Codable, Identifiable {
         wind_speed = 0.0
         wind_deg = 0
         weather = []
+        pop = 0.0
     }
 }
 
-extension Weather {
+extension Hourly {
     var id: UUID {
         return UUID()
     }

@@ -9,11 +9,11 @@ import Foundation
 
 struct Response: Codable {
     var current: Weather
-    var hourly: [Weather]
+    var hourly: [Hourly]
     var daily: [Daily]
     
     static func empty() -> Response {
-        return Response(current: Weather(), hourly: [Weather](repeating: Weather(), count: 12), daily: [Daily](repeating: Daily(), count: 8))
+        return Response(current: Weather(), hourly: [Hourly](repeating: Hourly(), count: 12), daily: [Daily](repeating: Daily(), count: 8))
     }
 }
 
