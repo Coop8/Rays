@@ -16,14 +16,14 @@ struct WeeklyWeatherView: View {
         VStack {
             HStack {
                 Text("Day")
-                    .frame(width: 50)
-                Spacer()
+                    .frame(width: 50, alignment: .leading)
+                Spacer(minLength: 62)
                 Text("Low | High")
-                    .frame(width: 150)
+                    .frame(width: 150, alignment: .leading)
                 Spacer()
                 Text("")
-            }.padding(.horizontal, 40)
-             .padding(.vertical, 15)
+            }.padding(.vertical, 15)
+             .padding(.horizontal, 45)
             
             ForEach(cityVM.weather.daily) { weather in
                 LazyVStack {
@@ -43,6 +43,7 @@ struct WeeklyWeatherView: View {
                 Text("\(cityVM.getTempFor(temp: weather.temp.min)) | \(cityVM.getTempFor(temp: weather.temp.max))")
                     .frame(width: 150)
                 Spacer()
+                Text(cityVM.getPrecipFor(precip: weather.pop))
                 cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
             }.padding(.horizontal, 40)
              .padding(.vertical, 15)
