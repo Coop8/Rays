@@ -44,11 +44,9 @@ struct WeeklyWeatherView: View {
                     .frame(width: 150)
                 Spacer()
                 Text(cityVM.getPrecipFor(precip: weather.pop))
+                    .frame(width: 50)
                 cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
             }.padding(.horizontal, 40)
              .padding(.vertical, 15)
-         //.background(RoundedRectangle(cornerRadius: 20).fill(Color.white))
-         //.shadow(color: Color.black.opacity(0.15), radius: 25, x: 2, y: 0.5)
-         //.padding()
     }
 }

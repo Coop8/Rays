@@ -15,6 +15,3 @@ extension API {
         return "\(baseURLString)onecall?lat=\(lat)&lon=\(lon)&exclude=minutely&appid=\(key)&units=imperial"
     }
 }
-
-
-// 

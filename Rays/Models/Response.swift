@@ -13,7 +13,7 @@ struct Response: Codable {
     var daily: [Daily]
     
     static func empty() -> Response {
-        return Response(current: Weather(), hourly: [Hourly](repeating: Hourly(), count: 12), daily: [Daily](repeating: Daily(), count: 8))
+        return Response(current: Weather(), hourly: [Hourly](repeating: Hourly(), count: 23), daily: [Daily](repeating: Daily(), count: 8))
     }
 }
 

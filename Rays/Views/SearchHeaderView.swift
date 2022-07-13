@@ -11,7 +11,6 @@ struct SearchHeaderView: View {
     
     @ObservedObject var cityVM: CityViewVM
     @Environment(\.colorScheme) var darkMode
-    
     @State private var searchItem = ""
     
     var body: some View {
