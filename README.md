@@ -8,6 +8,7 @@ Some things that I changed from the tutorial include:
 	 - I decided to not use Lottie files as I wanted a more minimalistic UI. Instead I opted to use Apple's SFSymbols.
 	 - I redesigned the search bar to try and achieve the native Apple look, however this forced me to remove the location button. In it's place I added a magnifying glass icon to better symbolize that is is a search bar.
 	 - I added a light and dark mode, pictured below. This was at first difficult to do as I was approaching it wrong, however a friend pointed me to some of his code which allowed me to add this feature better.
+	 ![](https://github.com/Coop8/Rays/blob/main/rayspics/DarkvsLight.png)
 	 - Small adjustments such as aligning the headers to left of the views instead of the center, combining all week days into one view, and adding shadows here and there.
  - The Code
 	 - I had to update the API call code as it was outdated.
