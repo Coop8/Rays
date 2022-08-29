@@ -89,4 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-API.swift
+Rays/Services/API.swift
