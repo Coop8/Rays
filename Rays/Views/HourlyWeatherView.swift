@@ -30,7 +30,8 @@ struct HourlyWeatherView: View {
                     }
                 }.padding()
             }
-        }.background(RoundedRectangle(cornerRadius: 20).fill(darkMode == .dark ? Color(.systemGray3) : Color.white))
+        }.background(.regularMaterial,
+                     in: RoundedRectangle(cornerRadius: 20))
             .shadow(color: Color.black.opacity(0.15), radius: 25, x: 2, y: 0.5)
             .padding()
     }
@@ -43,7 +44,8 @@ struct HourlyWeatherView: View {
             Text(temp)
             Text(precip)
         }.padding()
-            .background(RoundedRectangle(cornerRadius: 20).fill(darkMode == .dark ? Color(.systemGray2) : Color.white))
+            .background(.thinMaterial,
+                        in: RoundedRectangle(cornerRadius: 20))
             //.shadow(color: Color.white.opacity(0.2), radius: 2, x: -2, y: -2)
             //.shadow(color: Color.black.opacity(0.2), radius: 2, x: 2, y: 2)
     }

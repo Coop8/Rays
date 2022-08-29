@@ -29,9 +29,10 @@ struct ConditionsView: View {
                 Spacer()
             }.padding()
         }
-         .background(RoundedRectangle(cornerRadius: 20).fill(darkMode == .dark ? Color(.systemGray3) : Color.white))
-         .shadow(color: Color.black.opacity(0.15), radius: 25, x: 2, y: 0.5)
-         .padding()
+        .background(.regularMaterial,
+                    in: RoundedRectangle(cornerRadius: 20))
+        .shadow(color: Color.black.opacity(0.15), radius: 25, x: 2, y: 0.5)
+        .padding()
     }
     
     private func createWidget(image: String, color: Color, title: String) -> some View {
@@ -40,7 +41,8 @@ struct ConditionsView: View {
                 .padding()
                 .font(.title)
                 .foregroundColor(color)
-                .background(RoundedRectangle(cornerRadius: 10).fill(darkMode == .dark ? Color(.systemGray2) : Color.white))
+                .background(.thinMaterial,
+                            in: RoundedRectangle(cornerRadius: 20))
             
             Text(title)
         }

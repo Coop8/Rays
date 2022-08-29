@@ -40,7 +40,8 @@ struct DailyWeatherView: View {
                 }
             }
         }.padding()
-         .background(RoundedRectangle(cornerRadius: 20).fill(darkMode == .dark ? Color(.systemGray3) : Color.white))
+         .background(.regularMaterial,
+                     in: RoundedRectangle(cornerRadius: 20))
          .shadow(color: Color.black.opacity(0.15), radius: 25, x: 2, y: 0.5)
     }
 }
