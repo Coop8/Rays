@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C2F899528395C4C00B70A2D /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F899428395C4C00B70A2D /* Hourly.swift */; };
+		7C365E4128BD566B00D6A133 /* RaysPics in Resources */ = {isa = PBXBuildFile; fileRef = 7C365E4028BD566B00D6A133 /* RaysPics */; };
 		7C79F9EF283439DE00E2174B /* RaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79F9EE283439DE00E2174B /* RaysApp.swift */; };
 		7C79F9F1283439DE00E2174B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79F9F0283439DE00E2174B /* ContentView.swift */; };
 		7C79F9F3283439DF00E2174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C79F9F2283439DF00E2174B /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		7C2F899428395C4C00B70A2D /* Hourly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
+		7C365E4028BD566B00D6A133 /* RaysPics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RaysPics; sourceTree = "<group>"; };
 		7C79F9EB283439DE00E2174B /* Rays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C79F9EE283439DE00E2174B /* RaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaysApp.swift; sourceTree = "<group>"; };
 		7C79F9F0283439DE00E2174B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		7C79F9E2283439DE00E2174B = {
 			isa = PBXGroup;
 			children = (
+				7C365E4028BD566B00D6A133 /* RaysPics */,
 				7C79F9ED283439DE00E2174B /* Rays */,
 				7C79F9FE283439DF00E2174B /* RaysTests */,
 				7C79FA08283439DF00E2174B /* RaysUITests */,
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C365E4128BD566B00D6A133 /* RaysPics in Resources */,
 				7C79F9F6283439DF00E2174B /* Preview Assets.xcassets in Resources */,
 				7C79F9F3283439DF00E2174B /* Assets.xcassets in Resources */,
 			);
