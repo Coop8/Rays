@@ -21,3 +21,6 @@ Some things that I would like to add/change in the future include:
  - Add a widget using WidgetKit
  - Add user settings for preferences such as Metric/Imperial units and themes
  - Update the UI a bit more to make it more visually appealing
+
+##
+If you enjoy my work feel free to follow me on LinkedIn: [Cooper Rockwell](https://www.linkedin.com/in/cooper-rockwell-324888221/)
