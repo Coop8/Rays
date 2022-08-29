@@ -12,7 +12,7 @@ Some things that I changed from the tutorial include:
 	 - Small adjustments such as aligning the headers to left of the views instead of the center, combining all week days into one view, and adding shadows here and there.
  - The Code
 	 - I had to update the API call code as it was outdated.
-	 - I added the chance of precipitation as the tutorial was using dew_point instead.
+	 - I added the chance of precipitation(pop) as the tutorial was using dew_point instead.
 
 Some things that I would like to add/change in the future include:
 
@@ -22,5 +22,7 @@ Some things that I would like to add/change in the future include:
  - Add user settings for preferences such as Metric/Imperial units and themes
  - Update the UI a bit more to make it more visually appealing
 
+##
+I learned many things from this project such as the MVVM architectural pattern, how api calls work, how to parse a json, new tricks and design patterns from SwiftUI, and how to use git more effectively.
 ##
 If you enjoy my work feel free to follow me on LinkedIn: [Cooper Rockwell](https://www.linkedin.com/in/cooper-rockwell-324888221/)
